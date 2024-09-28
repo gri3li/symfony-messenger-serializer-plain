@@ -1,0 +1,34 @@
+{
+  "name": "gri3li/symfony-messenger-serializer-plain",
+  "description": "A plain Symfony Messenger serializer without stamps handling",
+  "keywords": [],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mikhail Gerasimov",
+      "email": "migerasimoff@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "symfony/messenger": "^6.4|^7.0",
+    "symfony/serializer": "^6.4|^7.0"
+  },
+  "autoload": {
+    "psr-4": { "Gri3li\\SymfonyMessengerSerializerPlain\\": "src" }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gri3li\\SymfonyMessengerSerializerPlain\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "cs": "./vendor/bin/phpcs --standard=PSR12 src tests",
+    "unit": "./vendor/bin/phpunit ./tests"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.10",
+    "phpunit/phpunit": "^11.3"
+  }
+}
